@@ -1,2 +1,3 @@
-# wordnet_nlp
-api for simple nlp processing using wordnet
+# Wordnet NLP
+
+https://peaceful-oasis-77952.herokuapp.com/
