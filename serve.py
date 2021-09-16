@@ -17,10 +17,14 @@ def home():
 
 @app.route(f"/parse",methods=["POST"])
 def parse():
-    if request.authorization.username not in app.recognised_users:
+    
+    authentication = request.authorization
+    if authentication is None or authentication.username not in app.recognised_users:
         raise Unauthorized()
+
     input_json = request.get_json()
-    text = input_json.get(WordnetJSON.TEXT.value, "")
+    text = "" if input_json is None else input_json.get(WordnetJSON.TEXT.value, "")
     return app.nlp.get_json(text)
 
-app.run(threaded=True, port=environ.get('PORT'), debug=True)
+if __name__ == '__main__':
+    app.run(threaded=True, port=environ.get('PORT'), debug=True)
