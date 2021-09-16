@@ -3,14 +3,16 @@
 ```python
 from requests import post
 
-post(
+response = post(
   "https://glacial-scrubland-43274.herokuapp.com/", 
   auth=("your_username","your_password"),
   json={"text":"this is a test"} 
 )
 ```
 
- ```json
+ ```python
+ response.json()
+ >> 
  {
    'text': 'this is an test', 
    'tokens': ['this', 'is', 'an', 'test'], 
