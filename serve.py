@@ -1,3 +1,5 @@
+from os import environ
+
 from flask import Flask,request
 from werkzeug.exceptions import Unauthorized
 
@@ -9,7 +11,11 @@ app.nlp = WordnetNLP()
 with open("users.txt") as recognised_users_file:
     app.recognised_users = recognised_users_file.readlines()
 
-@app.route(f"/",methods=["POST"])
+@app.route("/")
+def home():
+    return "Wordnet NLP"
+
+@app.route(f"/parse",methods=["POST"])
 def parse():
     if request.authorization.username not in app.recognised_users:
         raise Unauthorized()
@@ -17,4 +23,4 @@ def parse():
     text = input_json.get(WordnetJSON.TEXT.value, "")
     return app.nlp.get_json(text)
 
-app.run(debug=False)
+app.run(threaded=True, port=environ.get('PORT'), debug=True)

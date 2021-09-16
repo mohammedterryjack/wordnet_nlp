@@ -2,10 +2,10 @@ from requests import post
 
 from utils.wordnet_json_keys import WordnetJSON
 
-endpoint = 'http://localhost:5000/'
-username = "your_username"
+endpoint = 'https://glacial-scrubland-43274.herokuapp.com/parse'
+username = "yout_username"
 password = "your_password"
-example = {WordnetJSON.TEXT.value:"george is a doctor"}
+example = {WordnetJSON.TEXT.value:"this is a test"}
 
 response = post(endpoint, json=example, auth=(username,password))
 print(response)
