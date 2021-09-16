@@ -14,7 +14,7 @@ response = post(
  response.json()
  >> 
  {
-   'text': 'this is an test', 
+   'text': 'this is a test', 
    'tokens': ['this', 'is', 'an', 'test'], 
    'part_of_speech': ['Stopword', 'Stopword', 'Stopword', 'Verb'], 
    'named_entities': [None, None, None, 'Change.Undergo.Take.Test'], 
