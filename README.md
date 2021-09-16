@@ -1,5 +1,6 @@
 # Wordnet NLP
 
+```python
 from requests import post
 
 post(
@@ -7,3 +8,4 @@ post(
   auth=("your_username","your_password"),
   json={"text":"this is a test"} 
 )
+```
