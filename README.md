@@ -4,7 +4,7 @@
 from requests import post
 
 response = post(
-  "https://glacial-scrubland-43274.herokuapp.com/", 
+  "https://glacial-scrubland-43274.herokuapp.com/parse", 
   auth=("your_username","your_password"),
   json={"text":"this is a test"} 
 )
