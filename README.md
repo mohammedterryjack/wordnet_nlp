@@ -15,7 +15,7 @@ response = post(
  >> 
  {
    'text': 'this is a test', 
-   'tokens': ['this', 'is', 'an', 'test'], 
+   'tokens': ['this', 'is', 'a', 'test'], 
    'part_of_speech': ['Stopword', 'Stopword', 'Stopword', 'Verb'], 
    'named_entities': [None, None, None, 'Change.Undergo.Take.Test'], 
    'definitions': [None, None, None, 'undergo a test'], 
