@@ -5,7 +5,7 @@ from requests import post
 
 url = "https://glacial-scrubland-43274.herokuapp.com/parse"
 example = {"text":"the lady thought she was such a big shot"}
-credentials = (<username>,<password>)
+credentials = (<USERNAME>, <PASSWORD>)
 
 response = post(url, auth=credentials, json=example) 
 ```
