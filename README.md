@@ -3,11 +3,11 @@
 ```python
 from requests import post
 
-response = post(
-  "https://glacial-scrubland-43274.herokuapp.com/parse", 
-  auth=("your_username","your_password"),
-  json={"text":"this is a test"} 
-)
+url = "https://glacial-scrubland-43274.herokuapp.com/parse"
+example = {"text":"this is a test"}
+credentials = (<username>,<password>)
+
+response = post(url, auth=credentials, json=example) 
 ```
 
  ```python
