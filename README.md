@@ -2,7 +2,7 @@
 
 Using Command line:
 ```python
-curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Authorization: Basic <YOUR_CREDENTIALS>' -H 'Connection: keep-alive' -H 'Content-Length: <JSON_LENGTH>' -H 'Content-Type: application/json' -H 'User-Agent: python-requests/2.23.0' -d '{"text": <YOUR_TEXT>}' https://glacial-scrubland-43274.herokuapp.com/parse
+curl -X POST -H 'Authorization: Basic <YOUR_CREDENTIALS>' -H 'Content-Type: application/json' -d '{"text": <YOUR_TEXT>}' https://glacial-scrubland-43274.herokuapp.com/parse
 ```
 
 Using Python:
