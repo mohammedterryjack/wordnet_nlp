@@ -1,6 +1,6 @@
 # Wordnet NLP
-```
-curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Authorization: Basic <CREDENTIALS>' -H 'Connection: keep-alive' -H 'Content-Length: 38' -H 'Content-Type: application/json' -H 'User-Agent: python-requests/2.23.0' -d '{"text": "the big fish said good bye"}' https://glacial-scrubland-43274.herokuapp.com/parse
+```python
+curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Authorization: Basic <YOUR_CREDENTIALS>' -H 'Connection: keep-alive' -H 'Content-Length: 38' -H 'Content-Type: application/json' -H 'User-Agent: python-requests/2.23.0' -d '{"text": <YOUR_TEXT>}' https://glacial-scrubland-43274.herokuapp.com/parse
 ```
 
 
