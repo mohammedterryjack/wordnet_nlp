@@ -5,7 +5,7 @@ Using Command line:
 url='https://glacial-scrubland-43274.herokuapp.com/parse';
 
 curl -X POST \
- -H 'Authorization: Basic ${credentials}' \
+ -H 'Authorization: Basic ***' \
  -H 'Content-Type: application/json' \
  -d '{"text": "this is a test"}' \
  ${url}
