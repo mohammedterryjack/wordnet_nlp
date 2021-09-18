@@ -99,7 +99,8 @@ class WordnetNLP:
     
     @staticmethod
     def get_related_topics(meaning:Synset) -> List[str]:
-        for relative in meaning.hyponyms() \
+        for relative in meaning.hypernyms() \
+            + meaning.hyponyms() \
             + meaning.part_meronyms() \
             + meaning.substance_meronyms() \
             + meaning.member_meronyms() \
