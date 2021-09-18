@@ -2,11 +2,14 @@
 
 Using Command line:
 ```python
+URL = 'https://glacial-scrubland-43274.herokuapp.com/parse'
+YOUR_TEXT = 'this is a test'
+
 curl -X POST \
  -H 'Authorization: Basic $YOUR_CREDENTIALS' \
  -H 'Content-Type: application/json' \
  -d '{"text": $YOUR_TEXT}' \
- https://glacial-scrubland-43274.herokuapp.com/parse
+ $URL
 ```
 
 Using Python:
