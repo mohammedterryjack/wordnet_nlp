@@ -13,7 +13,6 @@ response = post(url, auth=credentials, json=example)
  ```python
  response.json()
  >> 
-ciao
 {
    "text": "ciao",
    "tokens": [
