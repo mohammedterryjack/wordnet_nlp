@@ -7,3 +7,6 @@ class WordnetJSON(Enum):
     NER = "named_entities"
     DEFINITIONS = "definitions"
     EXAMPLES = "examples"
+    SYNONYMS = "synonyms"
+    ANTONYMS = "antonyms"
+    RELATED = "related_to"

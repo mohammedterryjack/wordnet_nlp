@@ -13,7 +13,7 @@ with open("users.txt") as recognised_users_file:
 
 @app.route("/")
 def home():
-    return "Wordnet NLP"
+    return "Wordnet NLP <img src='https://miro.medium.com/max/1400/1*fPnj_OVp7ZE2V510QXP5Rg.png'>"
 
 @app.route(f"/parse",methods=["POST"])
 def parse():
